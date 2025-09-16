@@ -5,7 +5,7 @@ logging.basicConfig(format='%(asctime)s,%(msecs)03d %(levelname)-8s [%(filename)
 
 from data_provider.data_factory import data_provider
 from exp.exp_basic import Exp_Basic
-from models import Informer, Autoformer, Transformer, Reformer
+from models import Informer, Autoformer, Kairosformer_v0, Transformer, Reformer
 from utils.tools import EarlyStopping, adjust_learning_rate, visual
 from utils.metrics import metric
 
@@ -33,6 +33,7 @@ class Exp_Main(Exp_Basic):
             'Transformer': Transformer,
             'Informer': Informer,
             'Reformer': Reformer,
+            'Kairosformer_v0': Kairosformer_v0,
         }
         model = model_dict[self.args.model].Model(self.args).float()
 
@@ -108,6 +109,7 @@ class Exp_Main(Exp_Basic):
         if not os.path.exists(path):
             os.makedirs(path)
 
+        time_start = time.time()
         time_now = time.time()
 
         train_steps = len(train_loader)
@@ -171,6 +173,9 @@ class Exp_Main(Exp_Basic):
 
         best_model_path = path + '/' + 'checkpoint.pth'
         self.model.load_state_dict(torch.load(best_model_path))
+
+        total_end = time.time()
+        print("Total training time: {}".format(total_end - time_start))
 
         return
 
