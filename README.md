@@ -38,11 +38,9 @@ Recent Transformer variants each excel in one dimension but struggle in another:
 
 - **Backbone**: Transformer encoder–decoder.  
 - **Plugin Modules**:
-  - **Attention Layer (swap)**: ProbSparse, full, linear, or diffusion-based attention.  
-  - **Decomposition Layer (optional)**: Seasonal-trend separation like Autoformer.  
+  - **Attention Layer (swap)**: ProbSparse attention.  
+  - **Decomposition Layer**: Seasonal-trend separation like Autoformer.  
   - **Autocorrelation Plugin**: Sub-series similarity discovery for periodic signals.  
-  - **Patch Plugin**: PatchTST-style local subseries tokens for efficiency.  
-  - **Variate Plugin**: iTransformer-style inverted attention for multivariate signals.  
 
 ---
 
@@ -58,7 +56,6 @@ Recent Transformer variants each excel in one dimension but struggle in another:
 
 - Conduct **systematic ablations**: test each plugin module independently.  
 - Benchmark on ETTh2, ETTm1, ETTm2, Traffic, Electricity, Weather.  
-- Explore **self-supervised pretraining** (PatchTST-style) for transferability.  
 - Optimize runtime profiling for real-time deployment.  
 
 ---
