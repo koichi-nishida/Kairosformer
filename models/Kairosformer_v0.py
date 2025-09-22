@@ -4,8 +4,9 @@ import torch.nn as nn
 
 from layers.Embed import DataEmbedding_wo_pos
 from layers.AutoCorrelation import AutoCorrelation, AutoCorrelationLayer
-from layers.Autoformer_EncDec import Encoder, Decoder, EncoderLayer, DecoderLayer, my_Layernorm, series_decomp
+from layers.Autoformer_EncDec import Decoder, DecoderLayer, my_Layernorm, series_decomp
 from layers.SelfAttention_Family import ProbAttention, AttentionLayer
+from layers.Transformer_EncDec import ConvLayer, Encoder as Transformer_Encoder, EncoderLayer as Transformer_EncoderLayer
 
 
 class Model(nn.Module):
@@ -15,7 +16,7 @@ class Model(nn.Module):
         self.label_len = configs.label_len
         self.pred_len = configs.pred_len
         kernel_size = configs.moving_avg
-        self.decomp = series_decomp(kernel_size)
+        self.decomp = series_decomp(kernel_size=getattr(configs, 'moving_avg', 25))
 
         self.enc_embedding = DataEmbedding_wo_pos(
             configs.enc_in, configs.d_model, configs.embed, configs.freq, configs.dropout
@@ -24,11 +25,11 @@ class Model(nn.Module):
             configs.dec_in, configs.d_model, configs.embed, configs.freq, configs.dropout
         )
 
-        self.encoder = Encoder(
+        self.encoder = Transformer_Encoder(
             [
-                EncoderLayer(
+                Transformer_EncoderLayer(
                     AutoCorrelationLayer(
-                        AutoCorrelation(
+                        ProbAttention(
                             mask_flag=False,
                             factor=configs.factor,
                             attention_dropout=configs.dropout,
@@ -38,14 +39,13 @@ class Model(nn.Module):
                         n_heads=configs.n_heads,
                     ),
                     d_model=configs.d_model,
-                    d_ff=configs.d_ff,
-                    moving_avg=configs.moving_avg,
+                    d_ff= min(configs.d_ff, int(2.5 * configs.d_model)),
                     dropout=configs.dropout,
                     activation=configs.activation,
                 )
                 for _ in range(configs.e_layers)
             ],
-            conv_layers=None,
+            conv_layers=[ConvLayer(configs.d_model) for _ in range(configs.e_layers - 1)],
             norm_layer=my_Layernorm(configs.d_model),
         )
 
@@ -53,7 +53,7 @@ class Model(nn.Module):
             return AttentionLayer(
                 ProbAttention(
                     mask_flag=True,
-                    factor=configs.factor,
+                    factor=getattr(configs, 'factor', 1),
                     attention_dropout=configs.dropout,
                     output_attention=False,
                 ),
@@ -62,8 +62,8 @@ class Model(nn.Module):
             )
 
         def _cross_attn():
-            return AutoCorrelationLayer(
-                AutoCorrelation(
+            return AttentionLayer(
+                ProbAttention(
                     mask_flag=False,
                     factor=configs.factor,
                     attention_dropout=configs.dropout,
@@ -102,15 +102,15 @@ class Model(nn.Module):
         dec_enc_mask: Optional[torch.Tensor] = None,
     ) -> torch.Tensor:
         B, _, C = x_enc.shape
+        seasonal_all, trend_all = self.decomp(x_enc)
+        mean  = torch.mean(x_enc, dim=1, keepdim=True).repeat(1, self.pred_len, 1)        
+        zeros = torch.zeros((B, self.pred_len, C), device=x_enc.device, dtype=x_enc.dtype)  
 
-        mean = torch.mean(x_enc, dim=1, keepdim=True).repeat(1, self.pred_len, 1)
-        zeros = torch.zeros((B, self.pred_len, C), device=x_enc.device, dtype=x_enc.dtype)
-        seasonal_init, trend_init = self.decomp(x_enc)
+        trend_init    = torch.cat([trend_all[:,   -self.label_len:, :], mean],  dim=1)     
+        seasonal_init = torch.cat([seasonal_all[:, -self.label_len:, :], zeros], dim=1)   
 
-        trend_init = torch.cat([trend_init[:, -self.label_len :, :], mean], dim=1)
-        seasonal_init = torch.cat([seasonal_init[:, -self.label_len :, :], zeros], dim=1)
-
-        enc_out = self.enc_embedding(x_enc, x_mark_enc)
+        enc_in = seasonal_all                            
+        enc_out = self.enc_embedding(enc_in, x_mark_enc)   
         enc_out, _ = self.encoder(enc_out, attn_mask=enc_self_mask)
 
         dec_in = self.dec_embedding(seasonal_init, x_mark_dec)
