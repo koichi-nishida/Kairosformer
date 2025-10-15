@@ -1,0 +1,337 @@
+Dataset,PredLen,Model,MSE,MAE,TotalTime(s)
+ETTh1,24,Autoformer,0.383754,0.424586,57.96
+ETTh1,24,Informer,0.573163,0.560964,43.39
+ETTh1,24,Kairosformer_A1,0.457367,0.478937,32.86
+ETTh1,24,Kairosformer_A2,0.465396,0.469382,50.48
+ETTh1,24,Kairosformer_A3,0.472622,0.475664,51.72
+ETTh1,24,Kairosformer_v0,0.439255,0.467147,61.25
+ETTh1,24,Transformer,0.59888,0.578377,33.45
+ETTh1,48,Autoformer,0.43297,0.447891,61.4
+ETTh1,48,Informer,0.650377,0.606909,36.9
+ETTh1,48,Kairosformer_A1,0.489872,0.495889,34.22
+ETTh1,48,Kairosformer_A2,0.47219,0.471639,53.92
+ETTh1,48,Kairosformer_A3,0.480048,0.479715,53.13
+ETTh1,48,Kairosformer_v0,0.513585,0.503827,93.11
+ETTh1,48,Transformer,0.849045,0.721559,34.91
+ETTh1,96,Autoformer,0.473684,0.463609,69.72
+ETTh1,96,Informer,0.75413,0.677716,40.73
+ETTh1,96,Kairosformer_A1,0.51628,0.512091,40.15
+ETTh1,96,Kairosformer_A2,0.472096,0.468273,94.11
+ETTh1,96,Kairosformer_A3,0.456126,0.465193,72.46
+ETTh1,96,Kairosformer_v0,0.57575,0.522034,62.28
+ETTh1,96,Transformer,0.930428,0.778579,39.18
+ETTh1,192,Autoformer,0.498669,0.47909,87.67
+ETTh1,192,Informer,0.979053,0.785902,46.4
+ETTh1,192,Kairosformer_A1,0.540683,0.528504,72.41
+ETTh1,192,Kairosformer_A2,0.491852,0.482083,136.38
+ETTh1,192,Kairosformer_A3,0.485067,0.478633,153.01
+ETTh1,192,Kairosformer_v0,0.638232,0.558331,118.15
+ETTh1,192,Transformer,1.044426,0.813998,48.28
+ETTh1,336,Autoformer,0.515646,0.49689,155.94
+ETTh1,336,Informer,1.246049,0.902932,107.0
+ETTh1,336,Kairosformer_A1,0.551992,0.541624,67.81
+ETTh1,336,Kairosformer_A2,0.49954,0.492872,104.83
+ETTh1,336,Kairosformer_A3,0.494564,0.48694,164.57
+ETTh1,336,Kairosformer_v0,0.68885,0.583385,148.82
+ETTh1,336,Transformer,1.110002,0.858756,63.59
+ETTh1,720,Autoformer,0.520737,0.520499,208.79
+ETTh1,720,Informer,1.148847,0.874405,184.01
+ETTh1,720,Kairosformer_A1,0.72439,0.64715,213.71
+ETTh1,720,Kairosformer_A2,0.535303,0.524956,233.41
+ETTh1,720,Kairosformer_A3,0.518927,0.519025,199.41
+ETTh1,720,Kairosformer_v0,0.798129,0.649926,110.99
+ETTh1,720,Transformer,1.095739,0.824438,195.04
+ETTh2,24,Autoformer,0.264297,0.342557,45.36
+ETTh2,24,Informer,0.930212,0.764437,34.7
+ETTh2,24,Kairosformer_A1,0.315463,0.377107,31.33
+ETTh2,24,Kairosformer_A2,0.286647,0.363539,40.61
+ETTh2,24,Kairosformer_A3,0.274279,0.354876,42.3
+ETTh2,24,Kairosformer_v0,0.330931,0.393051,75.58
+ETTh2,24,Transformer,0.881555,0.744631,39.0
+ETTh2,48,Autoformer,0.30395,0.368888,48.9
+ETTh2,48,Informer,1.515442,1.004649,35.79
+ETTh2,48,Kairosformer_A1,0.339425,0.392742,33.96
+ETTh2,48,Kairosformer_A2,0.313626,0.372612,62.21
+ETTh2,48,Kairosformer_A3,0.312563,0.37403,62.83
+ETTh2,48,Kairosformer_v0,0.345421,0.405773,38.34
+ETTh2,48,Transformer,1.349392,0.949403,33.88
+ETTh2,96,Autoformer,0.374038,0.418481,67.63
+ETTh2,96,Informer,2.985049,1.424758,73.8
+ETTh2,96,Kairosformer_A1,0.396372,0.432103,91.15
+ETTh2,96,Kairosformer_A2,0.342585,0.386279,105.46
+ETTh2,96,Kairosformer_A3,0.340728,0.383718,72.91
+ETTh2,96,Kairosformer_v0,0.416928,0.449964,51.77
+ETTh2,96,Transformer,2.029655,1.15418,37.93
+ETTh2,192,Autoformer,0.42822,0.440352,69.43
+ETTh2,192,Informer,5.610566,2.016788,93.98
+ETTh2,192,Kairosformer_A1,0.432048,0.456622,94.69
+ETTh2,192,Kairosformer_A2,0.439011,0.441642,91.51
+ETTh2,192,Kairosformer_A3,0.427295,0.434887,92.67
+ETTh2,192,Kairosformer_v0,0.559586,0.521673,48.93
+ETTh2,192,Transformer,5.121124,1.800789,56.89
+ETTh2,336,Autoformer,0.463455,0.473225,91.16
+ETTh2,336,Informer,4.421807,1.764606,65.95
+ETTh2,336,Kairosformer_A1,0.484324,0.486697,98.71
+ETTh2,336,Kairosformer_A2,0.457506,0.465257,84.31
+ETTh2,336,Kairosformer_A3,0.457264,0.465269,84.64
+ETTh2,336,Kairosformer_v0,0.543003,0.523129,60.6
+ETTh2,336,Transformer,5.071852,1.814894,76.07
+ETTh2,720,Autoformer,0.474267,0.483147,174.43
+ETTh2,720,Informer,3.125442,1.506948,75.09
+ETTh2,720,Kairosformer_A1,0.481107,0.497117,244.66
+ETTh2,720,Kairosformer_A2,0.477618,0.480939,137.19
+ETTh2,720,Kairosformer_A3,0.464295,0.480614,166.86
+ETTh2,720,Kairosformer_v0,0.582439,0.558549,130.25
+ETTh2,720,Transformer,3.096797,1.450343,138.4
+ETTm1,24,Autoformer,0.589069,0.501256,203.99
+ETTm1,24,Informer,0.323856,0.380896,119.29
+ETTm1,24,Kairosformer_A1,0.343719,0.405334,179.11
+ETTm1,24,Kairosformer_A2,0.456607,0.451932,295.03
+ETTm1,24,Kairosformer_A3,0.530374,0.470481,209.57
+ETTm1,24,Kairosformer_v0,0.390023,0.420153,125.97
+ETTm1,24,Transformer,0.307129,0.359411,111.41
+ETTm1,48,Autoformer,0.583706,0.501861,222.79
+ETTm1,48,Informer,0.52769,0.518998,127.06
+ETTm1,48,Kairosformer_A1,0.385955,0.423752,197.69
+ETTm1,48,Kairosformer_A2,0.550523,0.490702,151.19
+ETTm1,48,Kairosformer_A3,0.556865,0.485655,154.15
+ETTm1,48,Kairosformer_v0,0.430333,0.434915,229.67
+ETTm1,48,Transformer,0.50606,0.46115,119.23
+ETTm1,96,Autoformer,0.697182,0.545474,205.98
+ETTm1,96,Informer,0.732044,0.650964,139.2
+ETTm1,96,Kairosformer_A1,0.451181,0.451169,299.79
+ETTm1,96,Kairosformer_A2,0.571551,0.50197,176.66
+ETTm1,96,Kairosformer_A3,0.560138,0.491002,178.3
+ETTm1,96,Kairosformer_v0,0.507385,0.481238,188.58
+ETTm1,96,Transformer,0.633306,0.590354,137.12
+ETTm1,192,Autoformer,0.568258,0.500121,393.58
+ETTm1,192,Informer,0.743762,0.653377,163.06
+ETTm1,192,Kairosformer_A1,0.453075,0.465663,309.26
+ETTm1,192,Kairosformer_A2,0.566867,0.501803,234.52
+ETTm1,192,Kairosformer_A3,0.594244,0.510846,297.06
+ETTm1,192,Kairosformer_v0,0.552503,0.505414,182.7
+ETTm1,192,Transformer,0.676716,0.612962,171.53
+ETTm1,336,Autoformer,0.584025,0.509345,364.24
+ETTm1,336,Informer,1.026939,0.804545,205.15
+ETTm1,336,Kairosformer_A1,0.460411,0.465312,321.06
+ETTm1,336,Kairosformer_A2,0.602857,0.514271,332.1
+ETTm1,336,Kairosformer_A3,0.600143,0.51329,337.17
+ETTm1,336,Kairosformer_v0,0.586713,0.528838,234.4
+ETTm1,336,Transformer,0.948551,0.752823,239.6
+ETTm1,720,Autoformer,0.650977,0.537881,611.15
+ETTm1,720,Informer,1.13603,0.859929,311.75
+ETTm1,720,Kairosformer_A1,0.555153,0.521016,773.4
+ETTm1,720,Kairosformer_A2,0.638456,0.536602,581.18
+ETTm1,720,Kairosformer_A3,0.617858,0.527752,864.55
+ETTm1,720,Kairosformer_v0,0.65143,0.553393,549.91
+ETTm1,720,Transformer,1.015024,0.774057,701.6
+ETTm2,24,Autoformer,0.163027,0.27482,384.0
+ETTm2,24,Informer,0.187581,0.318923,132.42
+ETTm2,24,Kairosformer_A1,0.175158,0.279889,127.47
+ETTm2,24,Kairosformer_A2,0.162517,0.268368,134.88
+ETTm2,24,Kairosformer_A3,0.157794,0.263402,141.96
+ETTm2,24,Kairosformer_v0,0.157843,0.264318,137.94
+ETTm2,24,Transformer,0.17322,0.308094,168.9
+ETTm2,48,Autoformer,0.187149,0.289029,235.84
+ETTm2,48,Informer,0.282758,0.397274,176.23
+ETTm2,48,Kairosformer_A1,0.192949,0.288918,114.47
+ETTm2,48,Kairosformer_A2,0.212471,0.298939,185.59
+ETTm2,48,Kairosformer_A3,0.183811,0.281082,152.61
+ETTm2,48,Kairosformer_v0,0.191055,0.285739,146.94
+ETTm2,48,Transformer,0.286182,0.383969,222.88
+ETTm2,96,Autoformer,0.231886,0.312266,218.27
+ETTm2,96,Informer,0.367528,0.451991,153.81
+ETTm2,96,Kairosformer_A1,0.255707,0.336542,242.09
+ETTm2,96,Kairosformer_A2,0.217705,0.297875,217.87
+ETTm2,96,Kairosformer_A3,0.245215,0.307797,301.7
+ETTm2,96,Kairosformer_v0,0.235882,0.314154,164.13
+ETTm2,96,Transformer,0.520457,0.510908,208.59
+ETTm2,192,Autoformer,0.301135,0.353157,558.06
+ETTm2,192,Informer,0.840926,0.694902,204.86
+ETTm2,192,Kairosformer_A1,0.340641,0.38597,293.39
+ETTm2,192,Kairosformer_A2,0.274437,0.334012,232.98
+ETTm2,192,Kairosformer_A3,0.313342,0.346934,351.2
+ETTm2,192,Kairosformer_v0,0.37782,0.408838,296.06
+ETTm2,192,Transformer,0.804304,0.676511,213.44
+ETTm2,336,Autoformer,0.358743,0.384275,576.38
+ETTm2,336,Informer,1.61739,1.00308,259.31
+ETTm2,336,Kairosformer_A1,0.381028,0.408308,317.52
+ETTm2,336,Kairosformer_A2,0.39584,0.389568,408.6
+ETTm2,336,Kairosformer_A3,0.345948,0.375927,410.37
+ETTm2,336,Kairosformer_v0,0.376105,0.403125,379.78
+ETTm2,336,Transformer,1.122531,0.823197,301.86
+ETTm2,720,Autoformer,0.417616,0.415163,855.35
+ETTm2,720,Informer,3.882203,1.45087,932.33
+ETTm2,720,Kairosformer_A1,0.466186,0.461436,518.41
+ETTm2,720,Kairosformer_A2,0.434491,0.426126,577.1
+ETTm2,720,Kairosformer_A3,0.4244,0.419107,593.91
+ETTm2,720,Kairosformer_v0,0.432633,0.433135,496.78
+ETTm2,720,Transformer,3.430783,1.400062,564.76
+Electricity,24,Autoformer,0.168589,0.287867,292.68
+Electricity,24,Informer,0.250856,0.356811,132.05
+Electricity,24,Kairosformer_A1,0.175079,0.294805,153.66
+Electricity,24,Kairosformer_A2,0.165138,0.288798,228.97
+Electricity,24,Kairosformer_A3,0.176531,0.297435,248.67
+Electricity,24,Kairosformer_v0,0.184579,0.307161,194.53
+Electricity,24,Transformer,0.227638,0.33721,132.72
+Electricity,48,Autoformer,0.182623,0.298829,199.26
+Electricity,48,Informer,0.263758,0.361914,202.69
+Electricity,48,Kairosformer_A1,0.187533,0.303646,111.28
+Electricity,48,Kairosformer_A2,0.175973,0.293958,266.45
+Electricity,48,Kairosformer_A3,0.178215,0.294781,282.31
+Electricity,48,Kairosformer_v0,0.212169,0.3307,217.35
+Electricity,48,Transformer,0.241416,0.344593,129.34
+Electricity,96,Autoformer,0.212882,0.326467,381.98
+Electricity,96,Informer,0.267271,0.362433,234.67
+Electricity,96,Kairosformer_A1,0.194622,0.309079,216.18
+Electricity,96,Kairosformer_A2,0.204504,0.315009,328.0
+Electricity,96,Kairosformer_A3,0.202471,0.314267,304.87
+Electricity,96,Kairosformer_v0,0.234878,0.349591,252.77
+Electricity,96,Transformer,0.257974,0.357004,196.94
+Electricity,192,Autoformer,0.217863,0.328579,308.83
+Electricity,192,Informer,0.280337,0.377001,203.37
+Electricity,192,Kairosformer_A1,0.205624,0.319539,281.12
+Electricity,192,Kairosformer_A2,0.223453,0.332455,365.55
+Electricity,192,Kairosformer_A3,0.225799,0.333078,462.94
+Electricity,192,Kairosformer_v0,0.273555,0.383898,317.42
+Electricity,192,Transformer,0.270175,0.367829,141.31
+Electricity,336,Autoformer,0.226242,0.336855,550.12
+Electricity,336,Informer,0.287252,0.385733,362.5
+Electricity,336,Kairosformer_A1,0.21241,0.327228,398.42
+Electricity,336,Kairosformer_A2,0.249647,0.357951,576.52
+Electricity,336,Kairosformer_A3,0.339286,0.422303,268.78
+Electricity,336,Kairosformer_v0,0.298261,0.402738,413.56
+Electricity,336,Transformer,0.274507,0.369411,371.26
+Electricity,720,Autoformer,0.27039,0.375557,704.59
+Electricity,720,Informer,0.309886,0.396885,353.99
+Electricity,720,Kairosformer_A1,0.23239,0.341296,463.13
+Electricity,720,Kairosformer_A2,0.314961,0.409038,1124.11
+Electricity,720,Kairosformer_A3,0.347638,0.430861,680.07
+Electricity,720,Kairosformer_v0,0.361557,0.445143,656.2
+Electricity,720,Transformer,0.280233,0.371713,424.64
+Exchange Rate,24,Autoformer,0.07147,0.193985,35.9
+Exchange Rate,24,Informer,0.507454,0.579645,47.35
+Exchange Rate,24,Kairosformer_A1,0.087816,0.216697,19.45
+Exchange Rate,24,Kairosformer_A2,0.0774,0.205247,28.4
+Exchange Rate,24,Kairosformer_A3,0.078007,0.202848,37.89
+Exchange Rate,24,Kairosformer_v0,0.089561,0.225464,24.12
+Exchange Rate,24,Transformer,0.312009,0.431333,25.11
+Exchange Rate,48,Autoformer,0.113983,0.2476,63.95
+Exchange Rate,48,Informer,0.576031,0.624899,23.95
+Exchange Rate,48,Kairosformer_A1,0.113422,0.247339,20.78
+Exchange Rate,48,Kairosformer_A2,0.10574,0.237151,37.92
+Exchange Rate,48,Kairosformer_A3,0.105537,0.237237,48.5
+Exchange Rate,48,Kairosformer_v0,0.1359,0.280079,25.18
+Exchange Rate,48,Transformer,0.462965,0.524072,21.89
+Exchange Rate,96,Autoformer,0.15868,0.289179,44.05
+Exchange Rate,96,Informer,0.917402,0.782362,25.27
+Exchange Rate,96,Kairosformer_A1,0.165242,0.299066,23.67
+Exchange Rate,96,Kairosformer_A2,0.152694,0.283779,43.84
+Exchange Rate,96,Kairosformer_A3,0.153106,0.285583,39.17
+Exchange Rate,96,Kairosformer_v0,0.190125,0.32193,27.25
+Exchange Rate,96,Transformer,0.759996,0.678432,34.27
+Exchange Rate,192,Autoformer,0.265357,0.37715,55.3
+Exchange Rate,192,Informer,1.192564,0.880486,35.55
+Exchange Rate,192,Kairosformer_A1,0.314431,0.419449,29.11
+Exchange Rate,192,Kairosformer_A2,0.280672,0.387269,68.4
+Exchange Rate,192,Kairosformer_A3,0.263781,0.37611,61.56
+Exchange Rate,192,Kairosformer_v0,0.340815,0.436902,31.83
+Exchange Rate,192,Transformer,1.026744,0.771248,59.51
+Exchange Rate,336,Autoformer,0.592398,0.581128,88.11
+Exchange Rate,336,Informer,1.703827,1.036989,57.15
+Exchange Rate,336,Kairosformer_A1,0.580934,0.593763,38.92
+Exchange Rate,336,Kairosformer_A2,0.447146,0.497176,78.54
+Exchange Rate,336,Kairosformer_A3,0.424774,0.482775,66.65
+Exchange Rate,336,Kairosformer_v0,0.455123,0.500495,38.84
+Exchange Rate,336,Transformer,1.434024,0.958288,44.55
+Exchange Rate,720,Autoformer,1.125946,0.825253,102.86
+Exchange Rate,720,Informer,2.718081,1.365603,44.8
+Exchange Rate,720,Kairosformer_A1,2.315111,1.252094,65.87
+Exchange Rate,720,Kairosformer_A2,1.128916,0.827637,96.32
+Exchange Rate,720,Kairosformer_A3,1.123606,0.825247,98.45
+Exchange Rate,720,Kairosformer_v0,1.13616,0.829581,52.97
+Exchange Rate,720,Transformer,2.24331,1.202504,61.44
+Traffic,24,Autoformer,0.581702,0.38063,83.76
+Traffic,24,Informer,0.628408,0.3477,55.11
+Traffic,24,Kairosformer_A1,0.55674,0.365431,49.9
+Traffic,24,Kairosformer_A2,0.568987,0.380385,65.65
+Traffic,24,Kairosformer_A3,0.594712,0.396641,68.95
+Traffic,24,Kairosformer_v0,0.609125,0.408038,57.89
+Traffic,24,Transformer,0.656811,0.373522,49.24
+Traffic,48,Autoformer,0.59179,0.367014,85.8
+Traffic,48,Informer,0.673284,0.37486,61.24
+Traffic,48,Kairosformer_A1,0.584548,0.379306,56.42
+Traffic,48,Kairosformer_A2,0.744131,0.471469,76.27
+Traffic,48,Kairosformer_A3,0.638643,0.412522,77.45
+Traffic,48,Kairosformer_v0,0.654231,0.436562,64.99
+Traffic,48,Transformer,0.649151,0.366899,53.84
+Traffic,96,Autoformer,0.632488,0.38758,101.22
+Traffic,96,Informer,0.70785,0.393114,72.12
+Traffic,96,Kairosformer_A1,0.589689,0.375911,68.47
+Traffic,96,Kairosformer_A2,0.631259,0.40575,92.58
+Traffic,96,Kairosformer_A3,0.665181,0.428656,92.81
+Traffic,96,Kairosformer_v0,0.703554,0.456872,77.32
+Traffic,96,Transformer,0.646459,0.362856,64.22
+Traffic,192,Autoformer,0.644428,0.408724,132.95
+Traffic,192,Informer,0.763534,0.411704,89.51
+Traffic,192,Kairosformer_A1,0.602095,0.38002,88.5
+Traffic,192,Kairosformer_A2,0.651854,0.420464,124.84
+Traffic,192,Kairosformer_A3,0.656105,0.424166,123.68
+Traffic,192,Kairosformer_v0,0.752265,0.48218,97.23
+Traffic,192,Transformer,0.671171,0.369261,81.39
+Traffic,336,Autoformer,0.618273,0.389018,189.53
+Traffic,336,Informer,0.80144,0.437122,123.49
+Traffic,336,Kairosformer_A1,0.603485,0.375177,126.73
+Traffic,336,Kairosformer_A2,0.660757,0.421512,183.19
+Traffic,336,Kairosformer_A3,0.669488,0.426299,179.7
+Traffic,336,Kairosformer_v0,0.812868,0.508917,134.82
+Traffic,336,Transformer,0.660926,0.36375,118.21
+Traffic,720,Autoformer,0.653025,0.40314,315.48
+Traffic,720,Informer,0.804239,0.444777,195.0
+Traffic,720,Kairosformer_A1,0.62806,0.385099,222.39
+Traffic,720,Kairosformer_A2,0.66736,0.421527,309.69
+Traffic,720,Kairosformer_A3,0.678046,0.430599,298.64
+Traffic,720,Kairosformer_v0,0.911154,0.562492,217.84
+Traffic,720,Transformer,0.675332,0.366517,214.08
+Weather,24,Autoformer,0.175909,0.267402,113.98
+Weather,24,Informer,0.138234,0.223011,65.72
+Weather,24,Kairosformer_A1,0.166525,0.248011,55.31
+Weather,24,Kairosformer_A2,0.174965,0.266318,83.73
+Weather,24,Kairosformer_A3,0.168936,0.258251,96.43
+Weather,24,Kairosformer_v0,0.221807,0.319788,69.19
+Weather,24,Transformer,0.146123,0.222146,59.95
+Weather,48,Autoformer,0.229856,0.307056,127.03
+Weather,48,Informer,0.270271,0.353416,70.62
+Weather,48,Kairosformer_A1,0.228659,0.31398,61.99
+Weather,48,Kairosformer_A2,0.270749,0.348827,96.2
+Weather,48,Kairosformer_A3,0.21005,0.301193,109.03
+Weather,48,Kairosformer_v0,0.242386,0.33527,74.7
+Weather,48,Transformer,0.292023,0.346174,63.96
+Weather,96,Autoformer,0.276282,0.338455,147.75
+Weather,96,Informer,0.34853,0.417471,78.45
+Weather,96,Kairosformer_A1,0.309368,0.374429,73.16
+Weather,96,Kairosformer_A2,0.236103,0.31557,117.33
+Weather,96,Kairosformer_A3,0.217319,0.294082,130.22
+Weather,96,Kairosformer_v0,0.298535,0.374619,84.92
+Weather,96,Transformer,0.326224,0.389474,73.45
+Weather,192,Autoformer,0.311803,0.367016,195.77
+Weather,192,Informer,0.517648,0.503076,93.77
+Weather,192,Kairosformer_A1,0.308695,0.380127,95.46
+Weather,192,Kairosformer_A2,0.310032,0.361989,166.1
+Weather,192,Kairosformer_A3,0.313731,0.370857,177.64
+Weather,192,Kairosformer_v0,0.456967,0.479542,105.07
+Weather,192,Transformer,0.668503,0.596303,91.42
+Weather,336,Autoformer,0.398055,0.421306,271.57
+Weather,336,Informer,0.84467,0.666432,118.11
+Weather,336,Kairosformer_A1,0.346638,0.403444,135.75
+Weather,336,Kairosformer_A2,0.34273,0.380429,240.68
+Weather,336,Kairosformer_A3,0.361456,0.397858,251.97
+Weather,336,Kairosformer_v0,0.436989,0.467538,136.27
+Weather,336,Transformer,0.776038,0.638958,126.01
+Weather,720,Autoformer,0.424575,0.433027,466.4
+Weather,720,Informer,1.075793,0.756546,181.28
+Weather,720,Kairosformer_A1,0.45608,0.472469,269.53
+Weather,720,Kairosformer_A2,0.434084,0.440955,436.49
+Weather,720,Kairosformer_A3,0.434228,0.433422,446.03
+Weather,720,Kairosformer_v0,0.609868,0.554706,216.86
+Weather,720,Transformer,1.018143,0.754098,247.2

@@ -1,0 +1,49 @@
+Dataset,PredLen,Best_MSE_Model,Best_MSE,Best_MAE_Model,Best_MAE,Best_Time_Model,Best_Time(s)
+ETTh1,24,Autoformer,0.383754,Autoformer,0.424586,Kairosformer_A1,32.86
+ETTh1,48,Autoformer,0.43297,Autoformer,0.447891,Kairosformer_A1,34.22
+ETTh1,96,Kairosformer_A3,0.456126,Autoformer,0.463609,Transformer,39.18
+ETTh1,192,Kairosformer_A3,0.485067,Kairosformer_A3,0.478633,Informer,46.4
+ETTh1,336,Kairosformer_A3,0.494564,Kairosformer_A3,0.48694,Transformer,63.59
+ETTh1,720,Kairosformer_A3,0.518927,Kairosformer_A3,0.519025,Kairosformer_v0,110.99
+ETTh2,24,Autoformer,0.264297,Autoformer,0.342557,Kairosformer_A1,31.33
+ETTh2,48,Autoformer,0.30395,Autoformer,0.368888,Transformer,33.88
+ETTh2,96,Kairosformer_A3,0.340728,Kairosformer_A3,0.383718,Transformer,37.93
+ETTh2,192,Kairosformer_A3,0.427295,Kairosformer_A3,0.434887,Kairosformer_v0,48.93
+ETTh2,336,Kairosformer_A3,0.457264,Kairosformer_A2,0.465257,Kairosformer_v0,60.6
+ETTh2,720,Kairosformer_A3,0.464295,Kairosformer_A3,0.480614,Informer,75.09
+ETTm1,24,Transformer,0.307129,Transformer,0.359411,Transformer,111.41
+ETTm1,48,Kairosformer_A1,0.385955,Kairosformer_A1,0.423752,Transformer,119.23
+ETTm1,96,Kairosformer_A1,0.451181,Kairosformer_A1,0.451169,Transformer,137.12
+ETTm1,192,Kairosformer_A1,0.453075,Kairosformer_A1,0.465663,Informer,163.06
+ETTm1,336,Kairosformer_A1,0.460411,Kairosformer_A1,0.465312,Informer,205.15
+ETTm1,720,Kairosformer_A1,0.555153,Kairosformer_A1,0.521016,Informer,311.75
+ETTm2,24,Kairosformer_A3,0.157794,Kairosformer_A3,0.263402,Kairosformer_A1,127.47
+ETTm2,48,Kairosformer_A3,0.183811,Kairosformer_A3,0.281082,Kairosformer_A1,114.47
+ETTm2,96,Kairosformer_A2,0.217705,Kairosformer_A2,0.297875,Informer,153.81
+ETTm2,192,Kairosformer_A2,0.274437,Kairosformer_A2,0.334012,Informer,204.86
+ETTm2,336,Kairosformer_A3,0.345948,Kairosformer_A3,0.375927,Informer,259.31
+ETTm2,720,Autoformer,0.417616,Autoformer,0.415163,Kairosformer_v0,496.78
+Electricity,24,Kairosformer_A2,0.165138,Autoformer,0.287867,Informer,132.05
+Electricity,48,Kairosformer_A2,0.175973,Kairosformer_A2,0.293958,Kairosformer_A1,111.28
+Electricity,96,Kairosformer_A1,0.194622,Kairosformer_A1,0.309079,Transformer,196.94
+Electricity,192,Kairosformer_A1,0.205624,Kairosformer_A1,0.319539,Transformer,141.31
+Electricity,336,Kairosformer_A1,0.21241,Kairosformer_A1,0.327228,Kairosformer_A3,268.78
+Electricity,720,Kairosformer_A1,0.23239,Kairosformer_A1,0.341296,Informer,353.99
+Exchange Rate,24,Autoformer,0.07147,Autoformer,0.193985,Kairosformer_A1,19.45
+Exchange Rate,48,Kairosformer_A3,0.105537,Kairosformer_A2,0.237151,Kairosformer_A1,20.78
+Exchange Rate,96,Kairosformer_A2,0.152694,Kairosformer_A2,0.283779,Kairosformer_A1,23.67
+Exchange Rate,192,Kairosformer_A3,0.263781,Kairosformer_A3,0.37611,Kairosformer_A1,29.11
+Exchange Rate,336,Kairosformer_A3,0.424774,Kairosformer_A3,0.482775,Kairosformer_v0,38.84
+Exchange Rate,720,Kairosformer_A3,1.123606,Kairosformer_A3,0.825247,Informer,44.8
+Traffic,24,Kairosformer_A1,0.55674,Informer,0.3477,Transformer,49.24
+Traffic,48,Kairosformer_A1,0.584548,Transformer,0.366899,Transformer,53.84
+Traffic,96,Kairosformer_A1,0.589689,Transformer,0.362856,Transformer,64.22
+Traffic,192,Kairosformer_A1,0.602095,Transformer,0.369261,Transformer,81.39
+Traffic,336,Kairosformer_A1,0.603485,Transformer,0.36375,Transformer,118.21
+Traffic,720,Kairosformer_A1,0.62806,Transformer,0.366517,Informer,195.0
+Weather,24,Informer,0.138234,Transformer,0.222146,Kairosformer_A1,55.31
+Weather,48,Kairosformer_A3,0.21005,Kairosformer_A3,0.301193,Kairosformer_A1,61.99
+Weather,96,Kairosformer_A3,0.217319,Kairosformer_A3,0.294082,Kairosformer_A1,73.16
+Weather,192,Kairosformer_A1,0.308695,Kairosformer_A2,0.361989,Transformer,91.42
+Weather,336,Kairosformer_A2,0.34273,Kairosformer_A2,0.380429,Informer,118.11
+Weather,720,Autoformer,0.424575,Autoformer,0.433027,Informer,181.28
